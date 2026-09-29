@@ -5,21 +5,21 @@
 class Geekyclaw < Formula
   desc "Fast, lightweight local AI assistant with persistent memory and 89 LLM provider presets"
   homepage "https://github.com/LIT2451/GeekyClaw"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.0/geekyclaw_0.2.0_darwin_amd64.tar.gz"
-      sha256 "7c796641e66710cae2bb72c6e1d6febe8daf7fbed9b286796fce6dd339ffa0ef"
+      url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.1/geekyclaw_0.2.1_darwin_amd64.tar.gz"
+      sha256 "de22cb7b3a497e2309d81e6dc08ab5810369c7ee4dc55e47dfae200f118d73d7"
 
       define_method(:install) do
         bin.install "geekyclaw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.0/geekyclaw_0.2.0_darwin_arm64.tar.gz"
-      sha256 "3adf15bd6766dd1f06aef6a9a09f66112b18da96ddcc6394b28f8dd5deb42b28"
+      url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.1/geekyclaw_0.2.1_darwin_arm64.tar.gz"
+      sha256 "927b87fab418439891b778f1f6259838d1befe47a01bf7a696d26f24af090fb5"
 
       define_method(:install) do
         bin.install "geekyclaw"
@@ -29,15 +29,15 @@ class Geekyclaw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.0/geekyclaw_0.2.0_linux_amd64.tar.gz"
-      sha256 "9316e1cf72f0154b6d307b0088d7ffc2f2b255d0e49bb98672aea33b32e3ae6e"
+      url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.1/geekyclaw_0.2.1_linux_amd64.tar.gz"
+      sha256 "e7eacf578fb50d7f142b2be51fe1688953c1caf656c34a46b2ef087c95038319"
       define_method(:install) do
         bin.install "geekyclaw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.0/geekyclaw_0.2.0_linux_arm64.tar.gz"
-      sha256 "b4e05f2af6a1d1b6e98dcfb2a7146e8b1456ffb685699cfa3e54079a95fed894"
+      url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.1/geekyclaw_0.2.1_linux_arm64.tar.gz"
+      sha256 "118aa72116c064212d6577f2055943142e44ab796c404736eba3f128d94f0d9b"
       define_method(:install) do
         bin.install "geekyclaw"
       end
