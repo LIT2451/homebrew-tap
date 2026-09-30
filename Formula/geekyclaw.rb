@@ -11,7 +11,7 @@ class Geekyclaw < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.10/geekyclaw_0.2.10_darwin_amd64.tar.gz"
-      sha256 "4c0823b0c768f06066e61c61f42fe20d50916e54634c1569e405be3eed838b02"
+      sha256 "ae5ab81dc8bb635aef329ffb3f1e111fd661838948ed76d8b37738bd746eb7d7"
 
       define_method(:install) do
         bin.install "geekyclaw"
@@ -19,7 +19,7 @@ class Geekyclaw < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.10/geekyclaw_0.2.10_darwin_arm64.tar.gz"
-      sha256 "ab6976f065ba88583020dacd5ad4209ce1bda2f25c15993c96537a3738fbbe84"
+      sha256 "20b4b5047be897e3e5fde90711380ce20c3b6fb7747ffb795d7cc49bdb888099"
 
       define_method(:install) do
         bin.install "geekyclaw"
@@ -30,14 +30,14 @@ class Geekyclaw < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.10/geekyclaw_0.2.10_linux_amd64.tar.gz"
-      sha256 "7117ccc64d193fe9348239ae9af75935de75d5f28b5454c32cb9045540b629c0"
+      sha256 "267ac35d24121d7a39b90e8eaa25c8cc91206abf96882693b716e5dae137187f"
       define_method(:install) do
         bin.install "geekyclaw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/LIT2451/GeekyClaw/releases/download/v0.2.10/geekyclaw_0.2.10_linux_arm64.tar.gz"
-      sha256 "a4d5922911a924ef7f94b849913870866ed69b7eaff43a4b2f674aea27cbaf25"
+      sha256 "2f3a020cfdb53e0bbb248862fdaebb87cdf0f0b8e037e7976fd17e80a85a4209"
       define_method(:install) do
         bin.install "geekyclaw"
       end
